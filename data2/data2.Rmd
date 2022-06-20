@@ -34,6 +34,7 @@ df2 = rnorm(1000) + mean2
 ```{r summarize_data}
 
 summary2 = summary(df2)
+print(summary2)
 
 ```
 

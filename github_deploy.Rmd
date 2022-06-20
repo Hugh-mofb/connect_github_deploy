@@ -46,7 +46,7 @@ s3_bucket = Sys.getenv("s3_bucket")
 ```{r deploy_data1}
 
 
-rmarkdown::render(input = 'data1/data1.Rmd', output = 'data1/data1.html', envir = parent.frame(), quiet = TRUE, clean = TRUE)
+rmarkdown::render(input = 'data1/data1.Rmd', envir = parent.frame(), quiet = TRUE, clean = TRUE)
 
 
 ```
@@ -55,7 +55,7 @@ rmarkdown::render(input = 'data1/data1.Rmd', output = 'data1/data1.html', envir 
 ```{r deploy_data2}
 
 
-rmarkdown::render(input = 'data2/data2.Rmd', output = 'data2/data2.html', envir = parent.frame(), quiet = TRUE, clean = TRUE)
+rmarkdown::render(input = 'data2/data2.Rmd', envir = parent.frame(), quiet = TRUE, clean = TRUE)
 ```
 
 

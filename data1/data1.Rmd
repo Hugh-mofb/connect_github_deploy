@@ -33,6 +33,7 @@ df1 = rnorm(1000) + mean1
 ```{r summarize_data}
 
 summary1 = summary(df1)
+print(summary1)
 
 ```
 
