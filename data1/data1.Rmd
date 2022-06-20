@@ -1,0 +1,45 @@
+---
+title: "First data"
+author: "Hugh Crews"
+date: '2022-06-02'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+mean1 = as.numeric(Sys.getenv("mean1"))
+
+s3_bucket = Sys.getenv("s3_bucket")
+
+```
+
+## Libraries
+
+```{r libraries}
+# Download & Upload files to S3
+library(aws.s3)
+
+```
+
+```{r get_data}
+
+df1 = rnorm(1000) + mean1
+
+```
+
+
+
+```{r summarize_data}
+
+summary1 = summary(df1)
+
+```
+
+
+```{r save_data}
+
+s3saveRDS(x = df1, object = "df1.rds", bucket = s3_bucket)
+s3saveRDS(x = summary1, object = "summary1.rds", bucket = s3_bucket)
+
+```

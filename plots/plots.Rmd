@@ -1,0 +1,55 @@
+---
+title: "Plots"
+author: "Hugh Crews"
+date: '2022-06-02'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+s3_bucket = Sys.getenv("s3_bucket")
+
+```
+
+## Libraries
+
+```{r libraries}
+# Download & Upload files to S3
+library(aws.s3)
+
+```
+
+
+```{r read_data}
+df1 = s3readRDS("df1.rds", bucket = s3_bucket)
+df2 = s3readRDS("df2.rds", bucket = s3_bucket)
+
+summary1 = s3readRDS("summary1.rds", bucket = s3_bucket)
+summary2 = s3readRDS("summary2.rds", bucket = s3_bucket)
+
+```
+
+
+```{r plot1}
+
+plot(df1)
+
+```
+
+
+
+```{r plot2}
+
+plot(df2)
+
+```
+
+
+```{r summaries}
+
+print(rbind(summary1, summary2))
+
+write.csv(c(summary1), "summary1.csv")
+
+```

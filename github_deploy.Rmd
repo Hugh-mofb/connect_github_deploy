@@ -1,0 +1,67 @@
+---
+title: "github_deploy"
+author: "Hugh Crews"
+date: '2022-06-20'
+output: html_document
+rmd_output_metadata:
+  rsc_output_files:
+    - data1/data1.html
+    - data2/data2.html
+resource_files:
+- plots/plots.Rmd
+- data1/data1.Rmd
+- data2/data2.Rmd
+- data1/data1.html
+- data2/data2.html
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+options(knitr.duplicate.label = "allow")
+
+#setup rsconnect info for programmatic deployment
+rs_user = Sys.getenv("rs_user")
+rs_server = Sys.getenv("rs_server")
+rs_api = Sys.getenv("rs_api")
+rs_url = Sys.getenv("rs_url")
+
+rsconnect::addServer(url = rs_url, name = rs_server)
+rsconnect::connectApiUser(account = rs_user, server = rs_server, apiKey = rs_api)
+
+
+
+```
+
+
+## Libraries
+
+```{r libraries}
+# Download & Upload files to S3
+library(aws.s3)
+s3_bucket = Sys.getenv("s3_bucket")
+
+```
+
+```{r deploy_data1}
+
+
+rmarkdown::render(input = 'data1/data1.Rmd', output = 'data1/data1.html', envir = parent.frame(), quiet = TRUE, clean = TRUE)
+
+
+```
+
+
+```{r deploy_data2}
+
+
+rmarkdown::render(input = 'data2/data2.Rmd', output = 'data2/data2.html', envir = parent.frame(), quiet = TRUE, clean = TRUE)
+```
+
+
+```{r deploy_plots}
+
+
+rsconnect::deployApp(appDir = "plots", forceUpdate = TRUE, appName = "test_github_plots", appTitle = "Test Github Deployment Plots and Results")
+
+```
