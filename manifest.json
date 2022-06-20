@@ -967,28 +967,28 @@
   },
   "files": {
     ".Renviron": {
-      "checksum": "26db6272dbc41dbeed35b6df18a862c0"
+      "checksum": "63e41a0f069f62188ed947c68525bea2"
     },
     "data1/data1.html": {
       "checksum": "ad6ca7e83720ee3e082e219746a4b678"
     },
     "data1/data1.Rmd": {
-      "checksum": "967189698b0799a0d346b9c4171c15cd"
+      "checksum": "cb37e1310cfeb709d72b936117511031"
     },
     "data2/data2.html": {
       "checksum": "10df79995ebd335b0ff176dcdf9d4aab"
     },
     "data2/data2.Rmd": {
-      "checksum": "2d20ef5e0e6a523659c951d822e250e7"
+      "checksum": "79a1263f6d981560d5457b55fb3c7db7"
     },
     "github_deploy.Rmd": {
-      "checksum": "9de552dce6d5b39ec5b631844beda615"
+      "checksum": "37b5a0afd4a187997e0f0fb35e0e55ab"
     },
     "plots/plots.html": {
       "checksum": "b3fd0f6b7aa4a5c5fb50f3e6dd635cb5"
     },
     "plots/plots.Rmd": {
-      "checksum": "316af8c4824574429058fcb080b953fd"
+      "checksum": "f27d93c209501508b7abbbbfa419554f"
     },
     "plots/summary1.csv": {
       "checksum": "ad7311f10da0f395b5e67ebab789d16d"
