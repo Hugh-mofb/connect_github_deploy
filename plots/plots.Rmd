@@ -46,11 +46,6 @@ plot(df2)
 ```
 
 
-```{r plot3}
-
-plot(df1, df2)
-
-```
 
 ```{r summaries}
 
