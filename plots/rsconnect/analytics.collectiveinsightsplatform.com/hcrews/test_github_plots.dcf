@@ -1,0 +1,11 @@
+name: test_github_plots
+title: Test Github Deployment Plots and Results
+username: hcrews
+account: hcrews
+server: analytics.collectiveinsightsplatform.com
+hostUrl: https://analytics.collectiveinsightsplatform.com/__api__
+appId: 49
+bundleId: 270
+url: https://analytics.collectiveinsightsplatform.com/github_test_plots/
+when: 1656098277.8396
+lastSyncTime: 1656098277.83961

@@ -982,19 +982,19 @@
       "checksum": "79a1263f6d981560d5457b55fb3c7db7"
     },
     "github_deploy.Rmd": {
-      "checksum": "37b5a0afd4a187997e0f0fb35e0e55ab"
+      "checksum": "d31bab38f3d71ff302c5008a4e71ab0d"
     },
     "plots/plots.html": {
       "checksum": "b3fd0f6b7aa4a5c5fb50f3e6dd635cb5"
     },
     "plots/plots.Rmd": {
-      "checksum": "f27d93c209501508b7abbbbfa419554f"
+      "checksum": "09f6c3a969d4dc3d181fcbc9abfeee22"
     },
     "plots/summary1.csv": {
       "checksum": "ad7311f10da0f395b5e67ebab789d16d"
     },
     "push_deployment.R": {
-      "checksum": "6a681740a5c664919f4111ef02e15274"
+      "checksum": "eebd00696b9f4a3cec73a53ef2f49890"
     }
   },
   "users": null

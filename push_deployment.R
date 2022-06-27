@@ -18,10 +18,9 @@ selected_files = c("github_deploy.Rmd",
                    "data2/data2.Rmd",
                    "plots/plots.Rmd",
                    "data1/data1.html",
-                   "data2/data2.html")
+                   "data2/data2.html",
+                   "plots/plots.html")
 
-
-rsconnect::writeManifest()
 
 rsconnect::deployApp(appDir = getwd(), appFiles = selected_files, forceUpdate = TRUE,
                      appName = "github_deploy",

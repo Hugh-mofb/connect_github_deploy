@@ -375,7 +375,10 @@ pre code {
 <pre class="r"><code># Download &amp; Upload files to S3
 library(aws.s3)</code></pre>
 <pre class="r"><code>df1 = rnorm(1000) + mean1</code></pre>
-<pre class="r"><code>summary1 = summary(df1)</code></pre>
+<pre class="r"><code>summary1 = summary(df1)
+print(summary1)</code></pre>
+<pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   1.519   4.375   4.966   4.987   5.677   8.579</code></pre>
 <pre class="r"><code>s3saveRDS(x = df1, object = &quot;df1.rds&quot;, bucket = s3_bucket)
 s3saveRDS(x = summary1, object = &quot;summary1.rds&quot;, bucket = s3_bucket)</code></pre>
 </div>

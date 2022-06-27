@@ -7,12 +7,19 @@ rmd_output_metadata:
   rsc_output_files:
     - data1/data1.html
     - data2/data2.html
+    - plots/plots.html
+  rsc_email_attachments:
+    - plots/plots.html
+  rsc_email_subject: "New plots are available for viewing"
+  rsc_email_body_html: "<strong>The new report is ready.  Download attachment or <a href = https://analytics.collectiveinsightsplatform.com/test_github_deploy/plots/plots.html>click here</a>.</strong>"
+  rsc_email_suppress_report_attachment: true
 resource_files:
 - plots/plots.Rmd
 - data1/data1.Rmd
 - data2/data2.Rmd
 - data1/data1.html
 - data2/data2.html
+- plots/plots.html
 ---
 
 ```{r setup, include=FALSE}
@@ -32,6 +39,7 @@ rsconnect::connectApiUser(account = rs_user, server = rs_server, apiKey = rs_api
 
 
 ```
+
 
 
 ## Libraries
