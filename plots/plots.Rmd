@@ -45,7 +45,11 @@ plot(df2)
 
 ```
 
+```{r plot3}
 
+plot(df2, df1)
+
+```
 
 ```{r summaries}
 
