@@ -11,7 +11,7 @@ rmd_output_metadata:
   rsc_email_attachments:
     - plots/plots.html
   rsc_email_subject: "New plots are available for viewing"
-  rsc_email_body_html: "<strong>The new report is ready.  Download attachment or <a href = https://analytics.collectiveinsightsplatform.com/test_github_deploy/plots/plots.html>click here</a>.</strong>"
+  rsc_email_body_html: "<strong>The new report is ready.  Download attachment or <a href = https://analytics.collectiveinsightsplatform.com/github_test_plots>click here</a>.</strong>"
   rsc_email_suppress_report_attachment: true
 resource_files:
 - plots/plots.Rmd
@@ -64,6 +64,12 @@ rmarkdown::render(input = 'data1/data1.Rmd', envir = parent.frame(), quiet = TRU
 
 
 rmarkdown::render(input = 'data2/data2.Rmd', envir = parent.frame(), quiet = TRUE, clean = TRUE)
+```
+
+```{r generate_plots_output}
+
+
+rmarkdown::render(input = 'plots/plots.Rmd', envir = parent.frame(), quiet = TRUE, clean = TRUE)
 ```
 
 
