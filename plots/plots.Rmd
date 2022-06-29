@@ -1,7 +1,7 @@
 ---
 title: "Plots"
 author: "Hugh Crews"
-date: '2022-06-02'
+date: "(Last Deployed: `r Sys.time()`)"
 output: html_document
 ---
 

@@ -5,7 +5,7 @@ account: hcrews
 server: analytics.collectiveinsightsplatform.com
 hostUrl: https://analytics.collectiveinsightsplatform.com/__api__
 appId: 48
-bundleId: 280
+bundleId: 323
 url: https://analytics.collectiveinsightsplatform.com/test_github_deploy/
-when: 1656101248.88074
-lastSyncTime: 1656101248.88075
+when: 1656428749.9798
+lastSyncTime: 1656428749.97981
